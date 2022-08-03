@@ -6,30 +6,36 @@
 
 header {
     position: fixed;
-}
-
-.navbar {
-    width: 100%;
-    height: 50px;
     background-color: aqua;
+    width: 100%;
+    top: 0;
 }
 
-nav img {
+.container {
+    width: 1280px;
+}
+
+.container img {
     width: 50px;
-    height:auto;
+    min-height: 50px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat( 4, 300px);
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     grid-template-rows: 1fr 1fr;
-    margin-top: 30px;
+    margin-top: 80px;
+    gap: 10px;
+    place-content: center;
 }
 
 .card {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
-    position: relative;
+    height: 450px;
+    /* max-width: 300px; */
+    /* position: relative; */
 }
 
 .card-image {
@@ -38,12 +44,11 @@ nav img {
 
 .card-image img {
     max-width: 100%;
-    object-fit: cover;
 }
 
 .svg-cont {
     /* margin-left: 65%; */
-    margin: 5% 0 5% 65%;
+    margin: 5% 0 5% 75%;
 }
 
 svg {
@@ -54,4 +59,31 @@ svg {
 p {
     margin-left: 5%;
 }
+   
 
+@media screen and ( max-width: 1200px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat( 3, 300px);
+    }
+}
+@media screen and ( max-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat( 2, 300px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    margin-top: 30px;
+}

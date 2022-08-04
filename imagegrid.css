@@ -6,13 +6,19 @@
 
 header {
     position: fixed;
-    background-color: aqua;
+    background-color: #011434;
     width: 100%;
     top: 0;
+    height: 50px;
 }
 
+.hero-section img {
+    width: 100%;
+    height: 800px;
+}
 .container {
     width: 1280px;
+    
 }
 
 .container img {
@@ -23,7 +29,6 @@ header {
 .grid {
     display: grid;
     grid-template-columns: repeat( 4, 300px);
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     grid-template-rows: 1fr 1fr;
     margin-top: 80px;
     gap: 10px;
@@ -34,11 +39,6 @@ header {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     height: 450px;
-    /* max-width: 300px; */
-    /* position: relative; */
-}
-
-.card-image {
     
 }
 
@@ -47,7 +47,6 @@ header {
 }
 
 .svg-cont {
-    /* margin-left: 65%; */
     margin: 5% 0 5% 75%;
 }
 
@@ -84,6 +83,6 @@ p {
 footer {
     width: 100%;
     height: 50px;
-    background-color: aqua;
+    background-color: #011434;
     margin-top: 30px;
 }
